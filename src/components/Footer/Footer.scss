@@ -1,0 +1,30 @@
+@import "../../App.scss";
+.footer{
+    .footer-content{
+        row-gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .footer-item{
+            display: flex;
+        align-items: center;
+        justify-content: center;
+           
+
+        }
+
+        @media screen and (min-width: 768px){
+            grid-template-columns: repeat(2, 1fr);
+            .footer-item{
+                text-align: left;
+            }
+        }
+
+        @media screen and (min-width: 992px){
+            grid-template-columns: repeat(4, 1fr);
+            .footer-item{
+                text-align: left;
+            }
+        }
+    }
+}
